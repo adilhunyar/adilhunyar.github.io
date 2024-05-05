@@ -23,8 +23,8 @@ body {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('BG01.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 100vh; /* Ensure the background covers the entire viewport */
-  margin: 0; /* Remove default margin */
+  min-height: 100vh; 
+  margin: 0; 
 }
 .navbar{
     width: 1200px;
@@ -289,23 +289,23 @@ body {
   max-width: 1500px;
   margin: 10 auto;
   padding: 30px;
-  background-color: rgba(87, 81, 81, 0.7); /* Semi-transparent background */
+  background-color: rgba(87, 81, 81, 0.7); 
   border-radius: 10px;
   margin-top: 10px;
 }
 
 .row {
   display: flex;
-  justify-content: space-around; /* Adjust spacing between projects */
-  margin-top: 20px; /* Optional: Add margin between rows */
+  justify-content: space-around; 
+  margin-top: 20px; 
 }
 
 .featured-projects h2 {
-  color: #ffcc00; /* Change the color to your preference */
+  color: #ffcc00; 
 }
 
 .project {
-  width: 50%; /* Adjust width to fit two projects in a row with some spacing */
+  width: 50%; 
   padding: 20px;
   
   text-align: justify;
@@ -314,24 +314,24 @@ body {
 }
 
 .project img {
-  width: 80%; /* Make the image responsive within its container */
-  max-width: 80%; /* Set maximum width to the container width */
-  max-height: 300px; /* Set maximum height as needed */
+  width: 80%; 
+  max-width: 80%; 
+  max-height: 300px; 
   border-radius: 2px;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-sizing: border-box; 
 }
 .project p {
   color: #ccc;
   margin-top: 5px;
-  line-height: 1.2; /* Improve paragraph line spacing for clarity */
+  line-height: 1.2; 
 }
-/* Increase font size for headings and paragraphs in sections */
+
 section h2 {
-  font-size: 40px; /* Adjust the font size as needed */
+  font-size: 40px; 
 }
 
 section p {
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 20px;
 }
 
 
@@ -433,7 +433,7 @@ section p {
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: unset;
   }
   
   .menu a:hover {
@@ -477,7 +477,7 @@ section p {
   .heading {
     text-align: center;
     font-size: 50px;
-    color: #f7f1f1; /* Adjust the color as needed */
+    color: #f7f1f1; 
     margin-bottom: 50px;
     margin-top: 100px;
 
@@ -498,19 +498,20 @@ section p {
     border-radius: 5px;
     text-align: center;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
-  }
-  
-  .box img {
-    max-width: 100%;
-    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.box img {
+    max-width: 50%;
+    max-height: 50%;
     border-radius: 8px;
-  }
+    object-fit: contain; 
+}
   
   h3 {
     margin-top: 10px;
     font-size: 18px;
-    color: #eff1f3; /* Heading color */
+    color: #eff1f3;
   }
   
   p {
@@ -550,3 +551,187 @@ section p {
     clear: both;
   }
   
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three products in each row */
+    gap: 20px; /* Adjust spacing between boxes */
+    justify-content: center;
+    align-items: center;
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+.box {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent; 
+    border: none; 
+    text-align: center;
+    box-shadow: 0 0 10px rgba(15, 15, 15, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.box img {
+    max-width: 200%;
+    height: auto;
+    border-radius: 2px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #fdfdfd; 
+}
+
+p {
+    color: #fdfbfb;
+    font-size: 14px;
+}
+
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+
+.product-details {
+  margin-top: 20px;
+  padding: 10px;
+  background-color:transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h3 {
+  color: #fafafa;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-details ul li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #ece3e3;
+}
+
+.medium-image {
+  width: 50%; 
+  max-height: 400px; 
+  display: block;
+  margin: 0 auto; 
+}
+
+.card {
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 10px;
+  background-color: transparent;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  color: #eee3e3;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f5efef;
+}
+
+.color-options {
+  margin-top: 100px;
+}
+
+.color-options label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.color-options label:hover {
+  transform: scale(1.1);
+}
+
+/* Color circles styling */
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.sky-blue {
+  background-color: skyblue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.black {
+  background-color: black;
+}
+
+.brown {
+  background-color: brown;
+}
+
+/* Add to Cart button styling */
+#add-to-cart-btn {
+  width: 100%;
+  height: 40px;
+  background: #ff7200;
+  border: 2px solid #ff7200;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+#add-to-cart-btn:hover {
+  color: #000;
+}
+
+#add-to-cart-btn:focus {
+  outline: none;
+}
